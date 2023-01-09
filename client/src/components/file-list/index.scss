@@ -1,0 +1,25 @@
+.file-list {
+  display: flex;
+
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  h1 {
+    font-size: 1.6rem;
+    padding-left: 1rem;
+  }
+}
+
+.file-list-grid-area {
+  // display: flex and flex-wrap: wrap won't allow the wrapped rows
+  // to be aligned to the start. grid allows this. to make it also responsive
+  // we use repeat(auto-fit, minmax(14rem, max-content)) where 14 rem is set
+  // based on the width of file-card, to center the card in the gridbox
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, max-content));
+
+  justify-content: center;
+  grid-gap: 1rem;
+}

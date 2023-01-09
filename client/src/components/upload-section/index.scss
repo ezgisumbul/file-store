@@ -1,0 +1,23 @@
+.upload-area {
+  position: relative;
+
+  margin: 1rem 0;
+  padding-bottom: 5rem;
+}
+
+.upload-btn {
+  position: absolute;
+  right: 0rem;
+}
+
+.upload-btn-txt {
+  display: flex;
+
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+
+  p {
+    margin: 0;
+  }
+}

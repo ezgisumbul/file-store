@@ -1,0 +1,91 @@
+.file-card {
+  position: relative;
+
+  display: inline-flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 14rem;
+  height: 18rem;
+  padding: 1rem;
+
+  border: 1px solid rgb(243, 239, 239);
+  border-radius: 0.3rem;
+  background-color: rgb(243, 239, 239);
+}
+
+.file-preview {
+  overflow: hidden;
+
+  width: 12rem;
+  height: auto;
+
+  object {
+    width: inherit;
+    height: auto;
+  }
+}
+
+.file-name-icon {
+  display: flex;
+
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  width: inherit;
+  padding: 0 1rem;
+  p {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 160px;
+    height: 1.2em;
+
+    text-overflow: ellipsis;
+    font-weight: 700;
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+
+  color: white;
+}
+
+.file-footer {
+  display: flex;
+
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+  width: inherit;
+}
+
+.file-details {
+  display: flex;
+
+  flex-direction: column;
+  width: inherit;
+  padding: 0 1rem;
+  p {
+    margin: 0;
+    padding: 0;
+
+    font-size: 0.7rem;
+  }
+}
+
+.file-buttons {
+  display: flex;
+
+  flex-direction: row;
+  justify-content: space-around;
+  width: inherit;
+  padding: 0 1rem;
+}

@@ -1,0 +1,30 @@
+.modal-dialog {
+  position: fixed !important;
+  z-index: 100;
+
+  top: 20%;
+  left: calc(-50vw + 50%);
+  right: calc(-50vw + 50%);
+  margin: 0 auto;
+
+  height: 25rem !important;
+  width: 30rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.modal {
+  position: fixed !important;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-form {
+  display: flex;
+
+  justify-content: space-between;
+
+  input {
+    width: 80%;
+  }
+}
