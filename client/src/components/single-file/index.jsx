@@ -40,6 +40,8 @@ export const SingleFile = ({ file }) => {
     <div className="file-card">
       <div className="file-preview">
         {/* object is used to display content of files as a preview image */}
+        {file.type.includes('.document') ||
+          (file.type.includes('.sheet') && <img src="/file.png" alt="" />)}
         <object data={file.base64} aria-label="Alternative Text"></object>
       </div>
 
